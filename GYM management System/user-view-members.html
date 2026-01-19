@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>View Members | User</title>
+  <link rel="stylesheet" href="user-view-members.css">
+</head>
+<body>
+
+<div class="overlay">
+  <div class="container">
+
+    <h1>Members List</h1>
+    <p class="subtitle">Read Only Access</p>
+
+    <!-- Search -->
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search by name or mobile"
+    />
+
+    <!-- Table -->
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Mobile</th>
+          <th>Membership</th>
+          <th>Joining Date</th>
+        </tr>
+      </thead>
+      <tbody id="membersTable"></tbody>
+    </table>
+
+    <button class="back" onclick="window.location.href='user-dashboard.html'">
+      Back to Dashboard
+    </button>
+
+  </div>
+</div>
+
+<script type="module" src="firebase.js"></script>
+<script type="module" src="user-view-members.js"></script>
+</body>
+</html>

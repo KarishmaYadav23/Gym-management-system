@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>User Reports</title>
+  <link rel="stylesheet" href="user-reports.css" />
+</head>
+<body>
+
+  <h1 class="title">My Reports</h1>
+
+  <!-- SUMMARY CARDS -->
+  <div class="summary">
+    <div class="card">
+      <h3>Total Bills</h3>
+      <p id="totalBills">0</p>
+    </div>
+
+    <div class="card">
+      <h3>Total Amount Paid</h3>
+      <p id="totalAmount">₹0</p>
+    </div>
+  </div>
+
+  <!-- BILL TABLE -->
+  <h2 class="sub-title">My Bills</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Plan</th>
+        <th>Amount</th>
+        <th>Bill Date</th>
+      </tr>
+    </thead>
+    <tbody id="billTable"></tbody>
+  </table>
+
+  <p class="no-data" id="noBills">No Bills Found</p>
+
+  <script type="module" src="user-reports.js"></script>
+</body>
+</html>

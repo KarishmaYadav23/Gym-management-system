@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reports | Gym Management System</title>
+  <link rel="stylesheet" href="reports.css">
+</head>
+<body>
+
+<div class="overlay">
+  <div class="container">
+
+    <h1>Reports</h1>
+    <p class="subtitle">Members & Billing Summary</p>
+
+   <!-- Summary Cards -->
+<div class="report-cards">
+  <div class="report-box">
+    <h3>Total Members</h3>
+    <span id="totalMembers">0</span>
+  </div>
+
+  <div class="report-box">
+    <h3>Total Bills</h3>
+    <span id="totalBills">0</span>
+  </div>
+
+  <div class="report-box">
+    <h3>Total Revenue</h3>
+    <span id="totalRevenue">₹0</span>
+  </div>
+</div>
+
+<!-- Member Report Table -->
+<h2>Member Report</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Mobile</th>
+      <th>Membership</th>
+      <th>Joining Date</th>
+    </tr>
+  </thead>
+  <tbody id="memberReportBody"></tbody>
+</table>
+
+<!-- Bill Report Table -->
+<h2>Bill Report</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Membership</th>
+      <th>Amount</th>
+      <th>Bill Date</th>
+    </tr>
+  </thead>
+  <tbody id="billReportBody"></tbody>
+</table>
+
+
+    <button onclick="downloadCSV()">Download Report (CSV)</button>
+
+  </div>
+</div>
+
+<!-- <script type="module" src="reports.js"></script> -->
+<script type="module" src="firebase.js"></script>
+<script type="module" src="reports.js"></script>
+
+</body>
+</html>

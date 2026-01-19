@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Bill</title>
+  <link rel="stylesheet" href="create-bill.css">
+</head>
+<body>
+
+  <div class="bill-container">
+    <h2>Create Bill</h2>
+
+    <select id="member">
+      <option value="">Select Member</option>
+    </select>
+
+    <select id="plan">
+      <option value="">Select Plan</option>
+      <option value="Monthly">Monthly</option>
+      <option value="Quarterly">Quarterly</option>
+      <option value="Yearly">Yearly</option>
+    </select>
+
+    <input type="number" id="amount" placeholder="Amount" readonly>
+
+    <input type="date" id="billDate">
+
+    <button onclick="createBill()">Generate Bill</button>
+  </div>
+
+  <script type="module" src="create-bill.js"></script>
+</body>
+</html>

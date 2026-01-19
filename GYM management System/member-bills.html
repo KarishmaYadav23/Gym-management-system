@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Bills</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dashboard-body">
+
+  <h1 class="dashboard-title">My Bills</h1>
+  <p class="dashboard-subtitle">Payment History</p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Plan</th>
+          <th>Amount</th>
+          <th>Bill Date</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="billTable">
+        <tr>
+          <td colspan="4" class="no-data">Loading...</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="back-btn" onclick="history.back()">⬅ Back</div>
+
+  <script type="module" src="member-bills.js"></script>
+</body>
+</html>

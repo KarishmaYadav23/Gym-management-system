@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assign Fee Package</title>
+  <link rel="stylesheet" href="assign-package.css">
+</head>
+<body>
+
+  <div class="package-container">
+    <h2>Assign Fee Package</h2>
+
+    <label>Membership Type</label>
+    <select id="packageType">
+      <option value="">Select Package</option>
+      <option value="Monthly">Monthly</option>
+      <option value="Quarterly">Quarterly</option>
+      <option value="Yearly">Yearly</option>
+    </select>
+
+    <label>Duration</label>
+    <input type="text" id="duration" placeholder="e.g. 1 Month" />
+
+    <label>Amount (₹)</label>
+    <input type="number" id="amount" placeholder="Enter amount" />
+
+    <button onclick="savePackage()">Save Package</button>
+  </div>
+
+  <script type="module" src="assign-package.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Members | Gym Management System</title>
+  <link rel="stylesheet" href="view-members.css">
+</head>
+<body>
+
+  <div class="overlay">
+    <div class="container">
+
+      <h1>Member Details</h1>
+      <p class="subtitle">View • Update • Delete Gym Members</p>
+
+      <!-- Search box (UI only for now) -->
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search member......"/>
+      </div>
+
+      <!-- Members Table -->
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Mobile</th>
+              <th>Membership</th>
+              <th>Joining Date</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+
+          <tbody id="membersTable">
+            <!-- Dummy row (JS se baad me Firebase data aayega) -->
+            <tr>
+              <td>Karishma Yadav</td>
+              <td>karishma@gmail.com</td>
+              <td>7007741188</td>
+              <td>Monthly</td>
+              <td>2026-01-28</td>
+              <td>
+                <button class="btn edit" onclick="editMember('DOC_ID')">Edit</button>
+                <button class="btn delete">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+<script type="module" src="firebase.js"></script>
+<script type="module" src="view-members.js"></script>
+
+</body>
+</html>

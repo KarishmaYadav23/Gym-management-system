@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit Member</title>
+  <link rel="stylesheet" href="edit-member.css">
+</head>
+<body>
+
+<div class="form-container">
+  <h2>Edit Member</h2>
+
+  <input type="text" id="name" placeholder="Name">
+  <input type="email" id="email" placeholder="Email">
+  <input type="text" id="mobile" placeholder="Mobile">
+
+  <select id="membership">
+    <option value="Monthly">Monthly</option>
+    <option value="Quarterly">Quarterly</option>
+    <option value="Yearly">Yearly</option>
+  </select>
+
+  <input type="date" id="joiningDate">
+
+  <button onclick="updateMember()">Update Member</button>
+</div>
+
+<script type="module" src="firebase.js"></script>
+<script type="module" src="edit-member.js"></script>
+
+</body>
+</html>

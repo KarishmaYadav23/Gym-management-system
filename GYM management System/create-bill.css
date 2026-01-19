@@ -1,0 +1,55 @@
+body {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.9)),
+              url("frontpage.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.bill-container {
+  width: 420px;
+  background: #000;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 0 25px rgba(212,175,55,.4);
+  animation: fadeIn .7s ease;
+}
+
+.bill-container h2 {
+  text-align: center;
+  color: #d4af37;
+  margin-bottom: 25px;
+}
+
+.bill-container input,
+.bill-container select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  background: #111;
+  border: 1px solid #444;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.bill-container button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg,#d4af37,#b8962e);
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.bill-container button:hover {
+  box-shadow: 0 8px 15px rgba(212,175,55,.5);
+  transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+  from {opacity:0; transform: translateY(30px);}
+  to {opacity:1; transform: translateY(0);}
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Monthly Notifications</title>
+  <link rel="stylesheet" href="notifications.css">
+</head>
+<body>
+
+<div class="overlay">
+  <div class="container">
+
+    <h1>Monthly Notifications</h1>
+    <p class="subtitle">Membership Expiry Alerts</p>
+
+    <button onclick="generateNotifications()">
+      Generate Monthly Notifications
+    </button>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Member Name</th>
+          <th>Message</th>
+          <th>Date</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="notificationTable"></tbody>
+    </table>
+
+  </div>
+</div>
+
+<script type="module" src="notifications.js"></script>
+</body>
+</html>

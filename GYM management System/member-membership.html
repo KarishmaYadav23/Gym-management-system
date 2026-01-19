@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Membership</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dashboard-body">
+
+  <h1 class="dashboard-title">My Membership</h1>
+  <p class="dashboard-subtitle">Current Membership Details</p>
+
+  <div class="membership-card">
+
+    <p><strong>Plan:</strong> <span id="mPlan">Loading...</span></p>
+    <p><strong>Amount:</strong> ₹<span id="mAmount">0</span></p>
+    <p><strong>Start Date:</strong> <span id="mStart">-</span></p>
+    <p><strong>End Date:</strong> <span id="mEnd">-</span></p>
+    <p><strong>Status:</strong> <span id="mStatus">-</span></p>
+
+  </div>
+
+  <div class="back-btn" onclick="history.back()">⬅ Back</div>
+
+  <script type="module" src="member-membership.js"></script>
+</body>
+</html>

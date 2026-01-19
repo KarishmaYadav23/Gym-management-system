@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="user-dashboard.css">
+</head>
+<body>
+
+<h1 class="title">USER DASHBOARD</h1>
+<p class="subtitle">Limited Access Panel</p>
+
+<div class="card-container">
+
+  <div class="card" onclick="location.href='user-view-members.html'">
+    View Members
+  </div>
+
+  <div class="card" onclick="location.href='user-view-bill.html'">
+    View Bills
+  </div>
+
+  <div class="card" onclick="location.href='user-reports.html'">
+    Reports
+  </div>
+
+  <div class="card logout" onclick="logoutUser()">
+    Logout
+  </div>
+
+</div>
+
+<script type="module" src="user-dashboard.js"></script>
+
+</body>
+</html>

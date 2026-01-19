@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard | Gym Management System</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+  <div class="overlay">
+    <div class="dashboard">
+
+      <h1>ADMIN DASHBOARD</h1>
+      <p class="subtitle">Gym Management System</p>
+
+      <div class="cards">
+        <a href="add-member.html" class="card">Add Member</a>
+        <a href="view-members.html" class="card">View / Update / Delete Members</a>
+        <a href="create-bill.html" class="card">Create Bill</a>
+        <a href="assign-package.html" class="card">Assign Fee Package</a>
+        <a href="notifications.html" class="card">Monthly Notifications</a>
+        <a href="reports.html" class="card">Reports</a>
+        <a href="#" class="card future" onclick="showFutureModal()">Supplement Store</a>
+        <a href="#" class="card future" onclick="showFutureModal()">Diet Details</a>
+        <a href="login.html" class="card logout">Logout</a>
+      </div>
+
+    </div>
+  </div>
+  <!-- Future Feature Modal -->
+<div id="futureModal" class="modal">
+  <div class="modal-content">
+    <h2>Future Implementation</h2>
+    <p>
+      This module is planned for future development.<br>
+      It will be implemented in the next version of the system.
+    </p>
+    <button onclick="closeFutureModal()">OK</button>
+  </div>
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>
