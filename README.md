@@ -13,14 +13,26 @@ This project helps in reducing manual work, improving data accuracy, and providi
 user-friendly interface for gym administration and members.
 
 ---
+## Live Demo & Repository
+### Live Project(Firebase Hosting): 
+https://gym-management-system-5ce66.web.app
+### GitHub Repository:
+https://github.com/KarishmaYadav23/Gym-management-system
 
-## 📌 Project Objective
+---
 
-The main objective of this project is to:
-- Digitally manage gym operations
-- Reduce manual record keeping
-- Provide secure role-based access
-- Improve efficiency for admin, staff, and members
+## Project Objective
+
+Traditional gym management relies heavily on paper-based payment receipts and manual notifications.
+This leads to:
+
+- Loss of receipts
+
+- Difficulty in tracking payments
+
+- Manual communication issues for gym schedules
+
+This project provides a digital solution using Firebase to store receipts securely and notify users automatically.
 
 ---
 
@@ -28,7 +40,7 @@ The main objective of this project is to:
 
 The system supports **three types of users**:
 
-### 1️⃣ Admin
+### Admin
 - Login securely
 - Manage gym staff (users)
 - Add / edit / delete members
@@ -37,7 +49,7 @@ The system supports **three types of users**:
 - Send notifications
 - View logs of actions
 
-### 2️⃣ User (Gym Staff / Coach)
+###  User (Gym Staff / Coach)
 - View members
 - Manage member details
 - View bills
@@ -53,7 +65,7 @@ The system supports **three types of users**:
 
 ---
 
-## 🔐 Authentication & Authorization
+## Authentication & Authorization
 
 - Firebase Authentication is used for login
 - Role-based redirection after login:
@@ -61,10 +73,14 @@ The system supports **three types of users**:
   - User → User Dashboard
   - Member → Member Dashboard
 - Unauthorized access is restricted
+##  Admin,Member & User Access
+
+All credentials are created and managed manually by the Gym Owner.
+For security reasons, login credentials are not shared publicly.
 
 ---
 
-## 🔁 Project Workflow (Execution Flow)
+## Project Workflow (Execution Flow)
 
 1. User opens `login.html`
 2. Login credentials are verified using **Firebase Authentication**
@@ -82,14 +98,14 @@ The system supports **three types of users**:
 |---------|--------|
 | HTML | Structure |
 | CSS | Styling & Responsive UI |
-| JavaScript (ES6) | Logic & Interactions |
+| JavaScript (ES6) | Logic ,Validation & Interactions |
 | Firebase Authentication | Login System |
-| Cloud Firestore | Database |
-| Firebase Hosting (optional) | Deployment |
+| Firebase Firestore | Database |
+| Firebase Hosting | Deployment |
 
 ---
 
-## 📁 Project Folder Structure
+## Project Folder Structure
 
 GYM-management-System/
 │
@@ -148,9 +164,18 @@ GYM-management-System/
 ├── README.md
 
 ---
+## Database Design (Firebase)
+
+- Users Collection
+- Members Collection
+- Bills Collection
+- Notifications Collection
+- Packages Collection
+
+All data is stored in cloud-based Firestore, ensuring security and scalability.
 
 ## How to Run the Project
-
+### Run Projet Locally
 1. Clone or download the project
 2. Open the project folder in **VS Code**
 3. Setup Firebase:
@@ -161,6 +186,9 @@ GYM-management-System/
 5. Run using:
    - **Live Server**
    - or open `login.html` in browser
+### Run Project Online
+The project is already deployed using Firebase Hosting.
+Open the live link in any web browser
 
 ---
 
@@ -208,8 +236,6 @@ Email:karishmayadav@gmail.com
 
 ## Acknowledgement
 
-I would like to thank my faculty for guidance and support during the development of this project.
-
-
+This project is developed as part of academic requirements and follows proper coding standards, documentation, and deployment practices.
 
 
